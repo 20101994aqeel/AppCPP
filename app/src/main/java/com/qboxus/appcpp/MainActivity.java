@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setStoreBoolValues(MainActivity.this,false);
+             //   setStoreBoolValues(MainActivity.this,false);
 
                 SharedPreferences sharedPreferences=getSharedPreferences("Myshared",MODE_PRIVATE);
                 tv.setText("Login status"+sharedPreferences.getBoolean("login",false));
@@ -63,5 +63,5 @@ public class MainActivity extends AppCompatActivity {
      */
     public native String stringFromJNI();
 
-    public native void setStoreBoolValues(Activity activity, boolean flag);
+   // public native void setStoreBoolValues(Activity activity, boolean flag);
 }
