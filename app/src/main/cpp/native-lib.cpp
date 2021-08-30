@@ -22,7 +22,7 @@ Java_com_qboxus_appcpp_MainActivity_stringFromJNI(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_qboxus_appcpp_MainActivity_setStoreBoolValues(JNIEnv *env,
+Java_com_qboxus_appcpp_SdkInitNew_setStoreBoolValues(JNIEnv *env,
                                                        jobject instance,
                                                        jobject activity,
                                                        jboolean flag) {

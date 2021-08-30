@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences sharedPreferences=getSharedPreferences("Myshared",MODE_PRIVATE);
                 sharedPreferences.edit().putBoolean("login",true).commit();
 
-                tv.setText("Login status"+sharedPreferences.getBoolean("login",false));
+                tv.setText("Login status "+sharedPreferences.getBoolean("login",false));
 
             }
         });
